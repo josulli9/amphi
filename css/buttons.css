@@ -1,0 +1,61 @@
+
+
+
+/*WELCOME FORM BUTTONS!!!*/
+.active
+{
+	width:49%;
+	float: left;
+	border:1px solid #f8f8f8;
+	height:40px;
+	padding-top:20px;
+	text-align: center;
+	background:#66969a;
+	color:#f8f8f8;
+	text-transform: uppercase;
+	font-size:15px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-decoration: none;
+
+	margin-bottom:1px;
+}
+.inactive
+{
+	width:49%;
+	float: left;
+	border:1px solid #f8f8f8;
+	height:40px;
+	padding-top:20px;
+	text-align: center;
+	background:#446467;
+	color:#f8f8f8;
+	text-transform: uppercase;
+	font-size:15px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-decoration: none;
+	margin-bottom:1px;
+}
+
+.submitbutton
+{
+	background:#1e2a2b;
+	/*margin-left:4%;*/
+	border:1px solid #f8f8f8;
+	color:#f8f8f8;
+	font-size: 15px;
+	text-transform: uppercase;
+	
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+}
+
+.submitbutton:hover
+{
+	background:#446467;
+	-webkit-transition:2s;
+	-moz-transition:2s;
+	-o-transition:2s;
+}

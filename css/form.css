@@ -1,0 +1,132 @@
+/*EDIT FORM INPUTS IN THIS SECTION EHRE NOWHERE ELSE!!!*/
+
+
+form#signup 
+{
+	  background: #66969a;
+	  width: 97%;
+	  margin-left: 0.3%;
+	  padding-right: 1.5%;
+	  padding-bottom:30px;
+	  padding-top:20px;
+	
+}
+
+form#signup input
+{
+	width: 95%;
+    height: 40px;
+    letter-spacing: 3px;
+    /* margin-top: 20px; */
+    padding-left: 5px;
+    margin-left: 3%;
+}
+
+form#signup input.borderleft
+{
+	border-left:5px solid #446467;
+	margin-left:2.5%;
+	margin-top:15px;
+}
+
+
+
+label.passreminder
+{
+	float: right;
+	margin-right: 2%;
+	color: #f8f8f8;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 5px;
+	margin-top: 5px;
+}
+
+label.terms
+{
+	float: left;
+	margin-right: 2%;
+	color: #f8f8f8;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 5px;	
+}
+
+/*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*//*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*/
+/*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*//*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*/
+/*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*//*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*/
+/*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*//*TERMS AND CONDITIONS BOX!! REPLICATE FOR LOGIN!!!*/
+.box input 
+{
+	display: none;
+}
+
+.box span 
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/box.png");
+	margin:20px 10px 20px 2.5%;
+	float:left;
+}
+.box input:checked + span 
+{
+	background: url("../images/boxtic.png");
+}
+
+label.terms
+{
+	margin-top:6%;
+}
+
+
+/*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*/
+/*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*/
+/*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*/
+/*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*//*FOOTER CONTACT FORM*/
+#contact
+{
+	width:95%;
+	margin-left:2.5%;
+}
+
+form#contact input
+{
+	width: 85%;
+    height: 35px;
+    font-size:13px;
+    letter-spacing: 3px;
+    margin-top:10px;
+    padding-left:5px;
+}
+
+form#contact textarea
+{
+	width:85%;
+	border-left:5px solid #446467;
+	height:120px;
+	margin-top:10px;
+	padding-left:5px;
+	font-size:13px;
+	letter-spacing: 3px;
+	line-height: 20px;
+}
+
+form#contact input.borderleft
+{
+	border-left:5px solid #446467;
+}
+
+form#contact label
+{
+	text-transform: uppercase;
+	font-weight:lighter;
+	letter-spacing: 5px;
+}
+form#contact input.submitbutton
+{
+	width:86.5%;
+	height:40px;
+}
+

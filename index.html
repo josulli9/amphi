@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>Welcome To Amphi</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+			  var mapProp = {
+			    center:new google.maps.LatLng(53.343651, -6.246820),
+			    zoom:18,
+			    mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+	<body>
+		
+		<header id='mainHeader' class='left'>
+			<div class="container">
+				<div id="logo" class="left">
+					<img src="images/logowhite.png" alt="main amphi logo">
+				</div>	
+				<div class="nav left">
+					<ul>
+						<li><a href=''>About Us</a></li>
+						<li><a href=''>Our Mission</a></li>
+						<li><a href=''>F.A.Q</a></li>
+						<li><a href=''>Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="social left">
+					<ul>
+						<li><img src="images/social/fb.png" alt="facebook"></li>
+						<li><img src="images/social/tw.png" alt="Twitter"></li>
+						<li><img src="images/social/in.png" alt="LinkedIn"></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<section id="slider" class='left'>
+			<div class="container">
+				
+				<div class="left twocol" >
+					<div class="transBgContent">
+						<h2 class='lighter white'>welcome to amphi</h2>
+						<p class="white">
+							Amphi is a web based communication application created to facilitate the gap between patient and doctors. The app in itself will pass important, relevant information dealing with medication and appointments in a safe and protected fashion.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="right twocol">
+					<div class="signupformcontainer">
+						<div class="formbuttons">
+							<a href="" class="active">SIGN UP</a>
+							<a href="" class="inactive">LOGIN</a>		
+						</div>
+							<!--use the buttons + jquery to toggle each form in and out of view. This way it looks like the other form is hidden -->
+							<!--use the buttons + jquery to toggle each form in and out of view. This way it looks like the other form is hidden -->
+							<!--CHECK OUT CODE ACADEM FOR DATA STATE BODY ACTIVE/INACTIVE -->
+							<!-- CHECK OUT DATA STATES ACTIVE/INACTIVE IN ORDER TO SWITCH FORMS-->
+						
+
+						<form id="signup" method="POST" action="reg.php">
+							<input type="Text" placeholder="Your Name" name='name' id='name' class='borderleft'>
+								<br>
+							<input type="Text" placeholder="Your Email" name='email' id='email' class='borderleft'>
+								<br>
+							<input type="password" placeholder="Your Password" name='password' id='password' class='borderleft'>
+								<br>
+								<label class='passreminder'>Min 8 Characters</label>
+								<br>
+							
+							<label class="box">
+	                            <input type="checkbox">
+	                            <span></span>
+                            </label>
+								<label class='terms'>Accept Terms And Conditions.</label>
+								<br><br>
+							<input type="submit" value="sign up" id="sigup" class="submitbutton">
+						</form>
+
+						<!-- THIS FORM SHOULD ALWAYS BE SET TO INACTIVE UNLESS CLICKED ON
+						<form id="login" method="POST" action="reg.php">
+							<input type="Text" placeholder="Username or Email" name='login_name' id='login_name'>
+								<br>
+							<input type="password" placeholder="Your password" name='login_pass' id='login_pass'>
+								<br>
+								<label>Min 8 Characters</label>
+								<br>
+							<input type="checkbox" id="remember" name='remember'>
+								<label>Remember Me</label>
+								<br><br>
+							<input type="submit" value="LOGIN" id="sigup">
+						</form>!-->
+				</div><!--END SIGNUPFORM CONTAINER-->
+			</div>
+		</section>
+
+
+
+
+		<section class='content '>
+			<div class="container">
+				<div class="left twocol">
+				
+					<p class='hpdesc'>
+						Amphi is a web based communication application created to facilitate the gap between patient and doctors. The app in itself will pass important, relevant information dealing with medication and appointments in a safe and protected fashion.
+					</p>
+				</div>
+				<div class="right twocol">
+					<video controls> 
+						<source src='videos/amphiprocess.mp4' type='video/mp4'>
+						<source src='videos/amphiprocess.oog' type='video/oog'>
+						<p>Your Browser does not support the video tag</p>
+					</video>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class='imagecontent'>
+			<div class="container">
+				<h4 class='quote'>
+				"This is where our awesome testinomals will be going in order to make the product look extra nice! It'll also have a nice medical image background"
+				</h4>
+			</div>
+		</section>
+
+
+		<section class='content'>
+			<div class="container">
+				<div class='left twocol'>
+					<article id='featuredArticle'>
+						<header>
+							<h4>Article Title</h4>
+							<p>Article Meta Data, Time, Author, Category</p>
+						</header>
+						<section>
+							<img src="images/medical/business.jpg">
+							<!-- THIS IS GOING TO BE A FULL WITH IMAGE-->
+						</section>
+						<footer>
+							<p class="extract darkgreen">
+								This is going to be the blog extract 
+								This is going to be the blog extract 
+								This is going to be the blog extract 
+								This is going to be the blog extract 
+								This is going to be the blog extract
+							</p>
+							<a href="#" class="readMore">
+								Read More
+							</a>
+						</footer>
+					</article>
+				</div>
+
+				<div class='left twocol'>
+					<ul id='smallblogs'>
+						<li class="smallblog">
+							<div class="smallBlogImg">
+								<img src="images/medical/scope.jpg">
+							</div>
+							<div class="smallBlogDetails">
+								<h5>Small Blog Heading,</h5>		
+								<h6>By Author</h6>
+								<p>
+									This is going to be the blog extract 
+									This is going to be the blog extract 
+									This is going to be the blog extract 
+									This is going to be the blog extract 
+									This is going to be the blog extract
+								</p>
+								<a href="#" class="readMore">
+									Read More
+								</a>
+							</div>
+						</li>
+						<li class="smallblog">
+							<div class="smallBlogImg">
+								<img src="images/medical/scope.jpg">
+							</div>
+							<div class="smallBlogDetails">
+								<h5>Small Blog Heading,</h5>		
+								<h6>By Author</h6>	
+								<p>
+									This is going to be the blog extract 
+									This is going to be the blog extract 
+									This is going to be the blog extract 
+									This is going to be the blog extract 
+									This is going to be the blog extract
+								</p>
+								<a href="#" class="readMore">
+									Read More
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</section>
+
+		<footer id='mainFooter'>
+			<div class="container">
+				<div class="fourcol left">
+					
+					<!--LEFT FOOTER COLUMN SLIGHTLY THINNER THAN THE OTHER 2-->
+					<h4 class='footerCol'>Follow <span class='lightgreen'>Us</span></h4>
+					<ul id="socialTwo">
+						<li><img src="images/social/fbwhite.png" alt="facebook"></li>
+						<li><img src="images/social/twwhite.png" alt="Twitter"></li>
+						<li><img src="images/social/inwhite.png" alt="LinkedIn"></li>
+						<li><img src="images/social/rsswhite.png" alt="RSS"></li>
+					</ul>
+					
+					
+					
+					<!-- FOOTERNAVIGATION-->
+					<h4 class='footerCol'>Explore Our <span class='lightgreen'>Site</span></h4>
+					<ul id="footerNav">
+						<li><a href=''>About Us</a></li>
+						<li><a href=''>Our Mission</a></li>
+						<li><a href=''>Testimonials</a></li>
+						<li><a href=''>Terms &amp; Conditions</a></li>
+						<li><a href=''>F.A.Q</a></li>
+						<li><a href=''>Privacy Policy</a></li>
+						<li><a href=''>Contact Us</a></li>
+					</ul>
+				</div>
+			
+				<div class="threecol left">
+					<h4 class='footerCol'>contact <span class='lightgreen'>us</span></h4>
+
+						<form id="contact" method="POST" action="thanks.php">
+							
+							<input type="text" id="con_name" name="con_name" class='borderleft' placeholder='Your Name'>
+								<Br><Br>
+							
+							<input type="text" id="con_email" name="con_email" class='borderleft' placeholder='Your Email'>
+								<Br><Br>
+							
+							<textarea id='con_content' name='con_content' class='borderleft' placeholder='Your Message'></textarea>
+								<Br><Br>
+							<input type='submit' value="send message" class="submitbutton">
+						</form>
+				</div>
+				<div class="threecol left">
+					<h4 class='footerCol'>find <span class='lightgreen'>us</span></h4>
+				<!-- google map stuff goes in here-->
+					<div id="googleMap"></div>
+
+					<p class="address">
+						8 Westland Row,<br>
+						Pearse Street,<br>
+						Dublin 2,<br>
+						Ireland
+					</p>
+
+				</div>
+			</div>
+		</footer>
+		<div class="container" style="padding:5px 0px;">
+		<p>Copyright &copy; 2015 Amphi.</p>
+		</div>
+
+
+	</body>
+</html>
